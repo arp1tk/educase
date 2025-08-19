@@ -49,7 +49,7 @@ function nonEmptyString(s, fieldName) {
   return null;
 }
 
-app.get("/health", (req, res) => res.json({ status: "ok" }));
+app.get("/", (req, res) => res.json({ status: "ok" }));
 
 app.post("/addSchool", async (req, res) => {
   try {
